@@ -25,6 +25,10 @@ router_https_port: "8443"
 
 Please do ```ddev poweroff``` and then ```ddev start```.
 
+Attention! Get Developer Access Keys: https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html
+
+## Setup Magento with Composer
+
 The most resent version:
 ```
 ddev composer create --repository=https://repo.magento.com/ magento/project-community-edition -vvv
@@ -37,9 +41,13 @@ but there we need
 ```
 php_version: "7.3"
 ```
-
-## Setup Magento with Composer
-
+Also, we need to turn off all stuff like browsers, messagers and so on,
+because it can cause 
 ```
-ddev composer create --repository=https://repo.magento.com/ magento/project-community-edition -vvv
+Failed to create project:exit status 137, stderr=
 ```
+Due to the lack of physical memory. 
+
+Authentication required (repo.magento.com):
+      Username: [Your Public Key]
+      Password: [Your Private Key]
