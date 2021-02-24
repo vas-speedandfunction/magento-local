@@ -53,3 +53,9 @@ Authentication required (repo.magento.com):
       Username: [Your Public Key]
       Password: [Your Private Key]
 ```
+
+## Setup Magento
+
+```
+$ bin/magento setup:install --base-url=https://magento2.ddev.site:8443/ --db-host=db --db-name=db --db-user=db --db-password=db --admin-firstname=Magento --admin-lastname=User --admin-email=vas+1@speedandfunction.com --admin-user=root --admin-password=pass4vas --language=en_US
+```
