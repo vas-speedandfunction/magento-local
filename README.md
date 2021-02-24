@@ -4,7 +4,7 @@
 
 https://www.ddev.com/get-started/
 
-## Setup Magento on DDEV
+## DDEV for Magento
 
 For the reference: https://ddev.readthedocs.io/en/stable/users/cli-usage/#magento-2-quickstart
 
@@ -36,4 +36,10 @@ ddev composer create --repository=https://repo.magento.com/ magento/project-comm
 but there we need 
 ```
 php_version: "7.3"
+```
+
+## Setup Magento with Composer
+
+```
+ddev composer create --repository=https://repo.magento.com/ magento/project-community-edition -vvv
 ```
