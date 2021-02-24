@@ -4,7 +4,8 @@
 
 https://www.ddev.com/get-started/
 
-We need more memory then default: 
+We need more memory then default.
+Docker Desktop for Mac has a number of settings that you'll want to pay attention to. Under "Advanced" in the "Resources" section in "Preferences", you can adjust the amount of memory, disk, and CPUs allocated to Docker. While the defaults work well for a small project or two, you may want to adjust these upward based on your experience. The default memory allocation is 2GB, but many people raise it to 4-5GB or even higher. 
 see https://github.com/vas-speedandfunction/magento-local/blob/main/Settings%2B2021-02-24%2B22-20-27.png
 
 ## DDEV for Magento
