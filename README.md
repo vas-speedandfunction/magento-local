@@ -48,6 +48,8 @@ Failed to create project:exit status 137, stderr=
 ```
 Due to the lack of physical memory. 
 
+```
 Authentication required (repo.magento.com):
       Username: [Your Public Key]
       Password: [Your Private Key]
+```
