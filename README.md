@@ -4,6 +4,9 @@
 
 https://www.ddev.com/get-started/
 
+We need more memory then default: 
+see https://github.com/vas-speedandfunction/magento-local/blob/main/Settings%2B2021-02-24%2B22-20-27.png
+
 ## DDEV for Magento
 
 For the reference: https://ddev.readthedocs.io/en/stable/users/cli-usage/#magento-2-quickstart
