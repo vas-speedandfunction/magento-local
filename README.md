@@ -83,4 +83,10 @@ If you need Magento 2 Sample Data (https://devdocs.magento.com/guides/v2.4/insta
 $ bin/magento sampledata:deploy
 $ bin/magento setup:upgrade
 ```
+## Login in admin
 
+If you forget admin URI, you can get it:
+
+```
+% ddev magento info:adminuri
+```
