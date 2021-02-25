@@ -61,5 +61,26 @@ Authentication required (repo.magento.com):
 ## Setup Magento
 
 ```
-$ bin/magento setup:install --base-url=https://magento2.ddev.site:8443/ --db-host=db --db-name=db --db-user=db --db-password=db --admin-firstname=Magento --admin-lastname=User --admin-email=vas+1@speedandfunction.com --admin-user=admin --admin-password=admin123 --language=en_US
+$ bin/magento setup:install --base-url=https://magento2.ddev.site:8443/ --db-host=db --db-name=db --db-user=db --db-password=db --admin-firstname=Magento --admin-lastname=User --admin-email=test@test.com --admin-user=admin --admin-password=admin123 --language=en_US
 ```
+Make some commands inside docket shell:
+
+```
+$ bin/magento deploy:mode:set developer
+$ bin/magento module:disable Magento_TwoFactorAuth
+$ bin/magento cache:flush
+```
+or the same outside:
+```
+$ ddev magento deploy:mode:set developer
+$ ddev magento module:disable Magento_TwoFactorAuth
+$ ddev magento cache:flush
+```
+
+If you need Magento 2 Sample Data (https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data-after-composer.html):
+
+```
+$ bin/magento sampledata:deploy
+$ bin/magento setup:upgrade
+```
+
